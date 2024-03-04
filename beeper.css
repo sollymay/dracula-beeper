@@ -1,0 +1,62 @@
+:root {
+    --dracula-background: #282836;
+    --dracula-background-dark: #121318;
+    --dracula-selection: #44475a;
+    --dracula-cyan: 139, 233, 253;
+    --dracula-green: #50FA7B;
+    --dracula-orange: #FFB86C;
+    --dracula-pink: #FF79C6;
+    --dracula-purple: #BD93F9;
+    --dracula-red: #FF5555;
+    --dracula-yellow: #F1FA8C;
+    --dracula-cyan-transparent: rgba(139, 233, 253, 0.5);
+
+    --dracula-text-primary: #f8f8f2;
+    --dracula-text-secondary: #6272a4;
+
+    --main-panel-bg: var(--dracula-background);
+    --header-control-fg: rgb(var(--dracula-cyan));
+    --chatview__pill__backgroundcolor: var(--dracula-selection);
+    --chatview__pill__fontcolor: var(--dracula-text-primary);
+    --chatview__message_linkpreview__fontcolor: var(--dracula-purple);
+    --chatview__message_self__backgroundcolor: var(--dracula-selection);
+    --chatview__message_self__fontcolor: var(--dracula-text-primary);
+    --chatview__readreceipt__fontcolor: var(--dracula-pink);
+    --read-check-color-bubble: var(--dracula-green);
+    --chatview__readmarker__fontcolor: var(--dracula-orange);
+
+    .bp_TitleBar {
+        background-color: var(--dracula-background) !important;
+    }
+
+    .mx_AccessibleButton {
+        color: var(--dracula-purple) !important;
+    }
+
+    .bp_LeftPanel {
+        background-color: var(--dracula-background) !important;
+    }
+
+    .nv_BridgedIcon {
+        color: var(--dracula-purple) !important;
+    }
+
+    .bp_Header {
+        color: var(--dracula-text-secondary) !important;
+    }
+
+    .mx_MainSplit {
+        background-color: var(--dracula-background) !important;
+    }
+
+    .mx_RoomHeader {
+        background-color: var(--dracula-background) !important;
+    }
+
+    .mx_SearchBar {
+        color: var(--dracula-text-secondary);
+    }
+
+    ;
+
+}
