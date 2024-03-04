@@ -1,2 +1,2 @@
 # dracula-beeper
-A Dracula themed option for Beeper
+A Dracula theme for Beeper
