@@ -9,28 +9,56 @@
     --dracula-purple: #BD93F9;
     --dracula-red: #FF5555;
     --dracula-yellow: #F1FA8C;
-    --dracula-cyan-transparent: rgba(139, 233, 253, 0.5);
+    --dracula-cyan-transparent: rgba(139, 233, 253, 0.7);
+    --dracula-green-transparent: rgba(80, 250, 123, 0.7);
 
     --dracula-text-primary: #f8f8f2;
     --dracula-text-secondary: #6272a4;
-
+    --base: 248, 248, 242;
+    --unread-indicator: var(--dracula-green);
     --main-panel-bg: var(--dracula-background);
     --header-control-fg: rgb(var(--dracula-cyan));
-    --chatview__pill__backgroundcolor: var(--dracula-selection);
-    --chatview__pill__fontcolor: var(--dracula-text-primary);
-    --chatview__message_linkpreview__fontcolor: var(--dracula-purple);
-    --chatview__message_self__backgroundcolor: var(--dracula-selection);
+    --chatview__pill__backgroundcolor: var(--dracula-cyan-transparent) !important;
+    --chatview__pill__fontcolor: var(--dracula-text-primary) !important;
+    --chatview__message_linkpreview__fontcolor: var(--dracula-cyan) !important;
+    --chatview__message_reply__backgroundcolor: var(--dracula-green-transparent);
+    --chatview__message_self__backgroundcolor: var(--dracula-text-secondary);
+    --chatview__message_sender_name__fontcolor: var(--dracula-cyan);
     --chatview__message_self__fontcolor: var(--dracula-text-primary);
     --chatview__readreceipt__fontcolor: var(--dracula-pink);
     --read-check-color-bubble: var(--dracula-green);
+    --room-tile-bg-hover: var(--dracula-background);
+    --primary-bg-color: var(--dracula-background);
     --chatview__readmarker__fontcolor: var(--dracula-orange);
+    --dialog-bg-color: var(--dracula-background-dark);
+    --space-bar-bg: var(--dracula-background);
+    --search-bar-input-fg: var(--dracula-selection);
+    --left-panel-v2-bg-no-transparency--windows: var(--dracula-background);
+    --floating-button-bg: var(--dracula-selection);
+    --global__kdb__backgroundcolor: var(--dracula-background);
 
     .bp_TitleBar {
         background-color: var(--dracula-background) !important;
     }
 
+
+
+
+    .mx_HomePage {
+        background-color: var(--dracula-background);
+        color: var(--dracula-text-primary);
+    }
+
+    .mx_IconizedContextMenu_label {
+        color: var(--dracula-text-primary);
+    }
+
+    .mx_MatrixChat {
+        background-color: var(--dracula-background) !important;
+    }
+
     .mx_AccessibleButton {
-        color: var(--dracula-purple) !important;
+        color: var(--dracula-text-primary) !important;
     }
 
     .bp_LeftPanel {
@@ -54,9 +82,130 @@
     }
 
     .mx_SearchBar {
-        color: var(--dracula-text-secondary);
+        color: var(--dracula-selection);
     }
 
     ;
 
+}
+
+.mx_ReplyPreview {
+    background: var(--dracula-selection);
+    color: var(--dracula-text-primary);
+}
+
+.mx_ContextualMenu {
+    background-color: var(--dracula-background);
+    color: var(--dracula-text-primary);
+}
+
+.mx_IconizedContextMenu_icon {
+    color: var(--dracula-pink) !important;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_active.mx_AccessibleButton,
+.mx_IconizedContextMenu .mx_IconizedContextMenu_active .mx_AccessibleButton {
+    color: var(--dracula-pink) !important;
+}
+
+.nv_RoomTile2_contextMenu_activeRow.mx_AccessibleButton,
+.nv_RoomTile2_contextMenu_activeRow .mx_AccessibleButton,
+.nv_RoomTile2_contextMenu_activeRow .mx_IconizedContextMenu_label {
+    color: var(--dracula-pink) !important;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_active .mx_IconizedContextMenu_icon::before {
+    background-color: var(--dracula-pink);
+}
+
+.bp_Icon {
+    color: var(--dracula-purple) !important;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_icon::before {
+    background-color: var(--dracula-pink);
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_icon::after {
+    background-color: var(--dracula-pink);
+}
+
+.mx_JumpToBottomButton_unread .mx_JumpToBottomButton_scrollDown {
+    background-color: var(--dracula-pink);
+}
+
+.mx_IconizedContextMenu_icon {
+    color: var(--dracula-purple);
+}
+
+.bp_Button2 .bp_Button2Primary .bp_Icon {
+    color: var(--dracula-text-primary) !important;
+}
+
+.bp_Button2Primary {
+    background: (87deg, #FF79C6 1px, blue 502px);
+}
+
+.mx_MessageComposer_wrapper .mx_MessageComposer_send {
+    background: var(--dracula-cyan) !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: var(--dracula-cyan) !important;
+}
+
+.mx_Dialog {
+    background-color: var(--dracula-background);
+}
+
+.mx_Dialog_background mx_Dialog_staticBackground {
+    background: var(--dracula-background-dark);
+}
+
+.mx_ToggleSwitch.mx_ToggleSwitch_on {
+    background-color: var(--dracula-cyan-transparent);
+}
+
+.mx_StyledRadioButton_checked {
+    border-color: var(--dracula-cyan-transparent);
+}
+
+.mx_StyledRadioButton input[type=radio]:checked+div {
+    border-color: var(--dracula-cyan-transparent);
+}
+
+.mx_StyledRadioButton input[type=radio]:checked+div>div {
+    background: var(--dracula-cyan-transparent);
+}
+
+.mx_TabbedView_tabsOnLeft .mx_TabbedView_tabLabel_active {
+    background-color: var(--dracula-cyan-transparent);
+    color: var(--dracula-background-dark);
+}
+
+._29wNnDmOKzlqOsGXbZtTjf._9FskwggmlIOkiJP_z4paL {
+    background: var(--dracula-cyan-transparent);
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_optionList_red .mx_IconizedContextMenu_icon::before {
+    background-color: var(--dracula-red);
+}
+
+.mx_PlayPauseButton {
+    background-color: var(--dracula-purple);
+}
+
+.mx_PlayPauseButton::before {
+    background-color: var(--dracula-background);
+}
+
+.dark-panel {
+    background-color: var(--dracula-background-dark);
+}
+
+._26kmSVS2EjmiuGo8pZydF8.b4USVCImGBZqyP5D6_tJ_:not(._1WRm95TPWOJRQ5AldIF9d8) {
+    background-color: var(--dracula-cyan) !important;
+}
+
+._1d1LCgK91IkG4a1jjg_TkP {
+    background-color: var(--dracula-selection);
 }
